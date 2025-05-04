@@ -4,6 +4,8 @@ body {
     margin: 40px auto;
     padding: 20px;
     border: 1px solid #aaaaaa;
+    background-color: white;
+    color: black;
 }
 
 h1 {
@@ -39,4 +41,14 @@ ol {
 img {
     margin-top: 30px;
     width: 150px;
+}
+
+/* Dark theme */
+.dark {
+    background-color: #333;
+    color: white;
+}
+
+.dark h2 {
+    color: #66B9E3; /* Accessible lighter blue */
 }

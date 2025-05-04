@@ -2,12 +2,18 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mission Statement</title>
     <link rel="stylesheet" href="style.css">
+    <script src="mission.js" defer></script>
 </head>
-<body>
+<body class="dark">
+    <select id="theme-select">
+        <option value="light">Light</option>
+        <option value="dark">Dark</option>
+    </select>
+
     <h1>MISSION STATEMENT</h1>
     <h2>BRIGHAM YOUNG UNIVERSITY</h2>
     <p>Brigham Young University-Idaho was founded and is supported and guided by The Church of Jesus Christ of Latter-day Saints. Its mission is to develop disciples of Jesus Christ who are leaders in their homes, the Church, and their communities.</p>
@@ -16,6 +22,6 @@
     <ol>2. Providing a high-quality education that prepares students of diverse interests and abilities for lifelong learning and employment.</ol>
     <ol>3. Serving as many students as possible within resource constraints.</ol>
     <ol>4. Delivering education that is affordable for students and the Church.</ol>
-    <img src="images/byui-logo_blue.webp">
+    <img id="logo" src="images/byui-logo_blue.webp" alt="BYUI logo">
 </body>
 </html>
