@@ -1,0 +1,107 @@
+/* General Reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #1e1e2f;
+  color: #f0f0f0;
+}
+
+/* Sidebar */
+aside {
+  width: 220px;
+  background-color: #2c2c3e;
+  padding: 20px;
+  border-right: 1px solid #444;
+  min-height: 100vh;
+}
+
+aside nav a {
+  display: block;
+  color: #b0c4ff;
+  text-decoration: none;
+  margin: 25px 0;
+  font-weight: bold;
+}
+
+aside nav a:hover {
+  color: #7aa7ff;
+}
+
+aside hr {
+  margin: 20px 0;
+  border-color: #444;
+}
+
+aside label {
+  margin-top: 10px;
+  display: block;
+  font-size: 0.9em;
+  color: #ccc;
+}
+
+aside select {
+  width: 100%;
+  padding: 6px;
+  margin-bottom: 12px;
+  background-color: #3a3a50;
+  border: none;
+  color: #f0f0f0;
+}
+
+/* Main Content */
+main {
+  flex: 1;
+  padding: 40px;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+header h1 {
+  font-size: 2.2em;
+  color: #7aa7ff;
+}
+
+header p {
+  font-size: 1em;
+  color: #aaa;
+}
+
+section {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Exactly 3 columns */
+  gap: 30px;
+}
+
+section div {
+  background-color: #2b2b3d;
+  padding: 15px;
+  border-radius: 8px;
+  text-align: center;
+  transition: transform 0.2s ease;
+}
+
+section div:hover {
+  background-color: #35354a;
+}
+
+section img {
+  height: 400px;
+  background-color: #444;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+section p {
+  margin-top: 4px;
+  font-size: 0.95em;
+}
