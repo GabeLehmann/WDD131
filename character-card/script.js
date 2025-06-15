@@ -3,12 +3,12 @@ const character = {
   class: "of 98'",
   level: 5,
   health: 100,
-  image: 'https://andejuli.github.io/wdd131/character_card/snortleblat.webp',
+  image: 'https://gabelehmann.github.io/WDD131/character-card/images/20250614_204451.jpg',
   attacked() {
     if (this.health >= 20) {
       this.health -= 20;
     } else {
-      alert('Computer Creep Shut Down!');
+      alert('Computer Creep was scrapped! Maybe he would still be alive if you sucked it up and bought a 5090...');
     }
   },
   levelUp() {
@@ -29,7 +29,7 @@ function updateCard() {
 document.getElementById('attacked').addEventListener('click', () => {
   character.attacked();
   updateCard();
-  document.getElementById('log').textContent = `${character.name} was attacked remotely!`;
+  document.getElementById('log').textContent = `${character.name} got a virus!`;
 });
 
 document.getElementById('levelup').addEventListener('click', () => {
