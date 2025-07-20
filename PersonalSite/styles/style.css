@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
-/* ─── Base ───────────────────────────────────────────────────────── */
+/*Base*/
 body {
   margin: 0; padding: 0;
   font-family: 'Montserrat', sans-serif;
@@ -9,7 +9,7 @@ body {
 }
 a { text-decoration: none; }
 
-/* ─── Header ────────────────────────────────────────────────────── */
+/*Header*/
 header {
   display: flex;
   justify-content: space-between;
@@ -40,14 +40,14 @@ nav ul li a {
 
 nav ul li a:hover { color: #ffcc00; }
 
-/* ─── Split Layout ───────────────────────────────────────────────── */
+/*Split Layout*/
 main.split {
   display: flex;
   gap: 30px;
   padding: 40px 50px;
 }
 
-/* ─── Controls Panel ────────────────────────────────────────────── */
+/*Controls Panel*/
 .controls-panel {
   flex: 0 0 250px;
   background: white;
@@ -74,7 +74,7 @@ main.split {
   padding: 5px;
 }
 
-/* ─── Track Grid ────────────────────────────────────────────────── */
+/*Track Grid*/
 .tracks-panel {
   flex: 1;
   margin-left: 150px;
@@ -84,7 +84,7 @@ main.split {
   
 }
 
-/* ─── Track Card ───────────────────────────────────────────────── */
+/*Track Card*/
 .track {
   background: white;
   padding: 20px;
@@ -110,7 +110,7 @@ main.split {
 }
 .favorite-btn:hover { color: #ffcc00; }
 
-/* ─── About Page Styles ─────────────────────────────────────────── */
+/*About Page Styles*/
 .about-content {
   max-width: 800px;
   margin: 50px auto;
@@ -141,7 +141,7 @@ main.split {
 }
 #shuffle-btn:hover { background: #4a54d2; }
 
-/* ─── Footer ────────────────────────────────────────────────────── */
+/*Footer*/
 footer {
   background: #333;
   color: white;
@@ -177,7 +177,7 @@ footer .social-icons img:hover {
 }
 .site-plan a:hover { color: #ffcc00; }
 
-/* ─── Dark Mode ─────────────────────────────────────────────────── */
+/*Dark Mode*/
 body.dark-mode {
   background: #121212;
   color: #e0e0e0;
@@ -209,7 +209,7 @@ body.dark-mode footer a {
   color: #e0e0e0;
 }
 
-/* ─── Dark Mode: favorite button color ───────────────────────────── */
+
 body.dark-mode .favorite-btn {
   color: #fff;
 }
@@ -218,7 +218,7 @@ body.dark-mode .favorite-btn {
     border-radius: 50%;
 }
 
-/* ─── Mobile ───────────────────────────────────────────────────── */
+/*Mobile*/
 @media (max-width: 768px) {
   header { flex-direction: column; padding: 15px 20px; }
   .menu-toggle { display: block; margin-bottom: 10px; }
