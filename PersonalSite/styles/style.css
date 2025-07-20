@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* ─── Base ───────────────────────────────────────────────────────── */
+body {
+  margin: 0; padding: 0;
+  font-family: 'Montserrat', sans-serif;
+  background: #f4f4f9;
+  color: #333;
+}
+a { text-decoration: none; }
+
+/* ─── Header ────────────────────────────────────────────────────── */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #5c67f2;
+  padding: 15px 50px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+.logo img { display: block; }
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 30px;
+  cursor: pointer;
+}
+nav ul {
+  display: flex;
+  gap: 50px;
+  list-style: none;
+}
+nav ul li a {
+  color: white;
+  font-size: 18px;
+  transition: color .3s;
+}
+
+nav ul li a:hover { color: #ffcc00; }
+
+/* ─── Split Layout ───────────────────────────────────────────────── */
+main.split {
+  display: flex;
+  gap: 30px;
+  padding: 40px 50px;
+}
+
+/* ─── Controls Panel ────────────────────────────────────────────── */
+.controls-panel {
+  flex: 0 0 250px;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+.controls-panel h2 {
+  margin-top: 0;
+  color: #5c67f2;
+}
+.control {
+  margin-bottom: 15px;
+}
+.control label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+.control select,
+.control input[type="checkbox"] {
+  width: 100%;
+  font-size: 16px;
+  padding: 5px;
+}
+
+/* ─── Track Grid ────────────────────────────────────────────────── */
+.tracks-panel {
+  flex: 1;
+  margin-left: 150px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  
+}
+
+/* ─── Track Card ───────────────────────────────────────────────── */
+.track {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+.track.favorited {
+  border: 2px solid #ffcc00;
+}
+.track audio {
+  width: 100%;
+  margin: 10px 0;
+}
+.favorite-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+.favorite-btn:hover { color: #ffcc00; }
+
+/* ─── About Page Styles ─────────────────────────────────────────── */
+.about-content {
+  max-width: 800px;
+  margin: 50px auto;
+  text-align: center;
+}
+#facts-list {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+}
+#facts-list li {
+  background: white;
+  padding: 10px;
+  margin: 5px 0;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+#shuffle-btn {
+  padding: 10px 20px;
+  font-size: 16px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 5px;
+  background: #5c67f2;
+  color: white;
+  cursor: pointer;
+  transition: background .3s;
+}
+#shuffle-btn:hover { background: #4a54d2; }
+
+/* ─── Footer ────────────────────────────────────────────────────── */
+footer {
+  background: #333;
+  color: white;
+  padding: 20px 50px;
+  margin-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+footer .logo,
+footer .social-icons,
+footer .site-plan {
+  flex: 1;
+}
+footer p {
+  width: 100%;
+  margin-top: 10px;
+  font-size: 14px;
+}
+footer .social-icons img {
+  margin: 0 10px;
+  transition: transform .3s;
+}
+footer .social-icons img:hover {
+  transform: scale(1.1);
+}
+.site-plan a {
+  color: white;
+  font-size: 18px;
+  transition: color .3s;
+}
+.site-plan a:hover { color: #ffcc00; }
+
+/* ─── Dark Mode ─────────────────────────────────────────────────── */
+body.dark-mode {
+  background: #121212;
+  color: #e0e0e0;
+}
+body.dark-mode header {
+  background: #1f1f1f;
+}
+body.dark-mode .controls-panel {
+  background: #1f1f1f;
+  color: #e0e0e0;
+}
+body.dark-mode .control select {
+  background: #333;
+  color: #e0e0e0;
+  border: 1px solid #555;
+}
+body.dark-mode .tracks-panel .track {
+  background: #1e1e1e;
+  color: #e0e0e0;
+}
+body.dark-mode .track.favorited {
+  border-color: #ffcc00;
+}
+body.dark-mode footer {
+  background: #1f1f1f;
+  color: #e0e0e0;
+}
+body.dark-mode footer a {
+  color: #e0e0e0;
+}
+
+/* ─── Dark Mode: favorite button color ───────────────────────────── */
+body.dark-mode .favorite-btn {
+  color: #fff;
+}
+
+.img-me {
+    border-radius: 50%;
+}
+
+/* ─── Mobile ───────────────────────────────────────────────────── */
+@media (max-width: 768px) {
+  header { flex-direction: column; padding: 15px 20px; }
+  .menu-toggle { display: block; margin-bottom: 10px; }
+  nav ul {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background: #5c67f2;
+    border-radius: 8px;
+    padding: 10px 0;
+  }
+  nav ul.show { display: flex; }
+  main.split { flex-direction: column; padding: 20px; }
+  .tracks-panel {
+    margin-left: 0;
+    grid-template-columns: 1fr;
+  }
+  .controls-panel {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .about-content { margin: 20px; }
+  footer { flex-direction: column; gap: 20px; padding: 30px 20px; }
+}

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Music By Gabe</title>
+  <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+  <header>
+  <div class="logo">
+    <a href="index.html">
+      <img src="images/Logo2.png" height="100" alt="Home">
+    </a>
+  </div>
+  <button class="menu-toggle" aria-label="Toggle Menu">☰</button>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+    </ul>
+  </nav>
+</header>
+
+  <main class="split">
+    <aside class="controls-panel">
+      <h2>Sort &amp; Filter</h2>
+
+      <div class="control">
+        <label for="genre-select">Genre:</label>
+        <select id="genre-select">
+          <option value="all">All</option>
+        </select>
+      </div>
+
+      <div class="control">
+        <label for="alpha-select">Alphabetical:</label>
+        <select id="alpha-select">
+          <option value="none">None</option>
+          <option value="asc">A → Z</option>
+          <option value="desc">Z → A</option>
+        </select>
+      </div>
+
+      <div class="control">
+        <label for="fav-select">Favorites:</label>
+        <select id="fav-select">
+          <option value="all">All Tracks</option>
+          <option value="fav">Only ★</option>
+        </select>
+      </div>
+
+      <div class="control">
+        <label for="dark-mode-toggle">Dark Mode:</label>
+        <input type="checkbox" id="dark-mode-toggle">
+      </div>
+    </aside>
+
+    <section id="tracks-list" class="tracks-panel">
+    </section>
+  </main>
+
+  <footer>
+    <div class="logo">
+      <a href="index.html"><img src="images/Logo2.png" height="100" alt="Home"></a>
+    </div>
+    <div class="social-icons">
+      <a href="https://www.instagram.com/gabe_lehmann/">
+        <img src="images/instagram_logo.png" height="50" alt="Instagram">
+      </a>
+      <a href="https://www.facebook.com/profile.php?id=100072262160649">
+        <img src="images/facebook_logo.png" height="50" alt="Facebook">
+      </a>
+      <a href="https://www.tiktok.com/@purps2024">
+        <img src="images/tiktok_logo.webp" height="50" alt="TikTok">
+      </a>
+    </div>
+    <div class="site-plan">
+      <a href="site-plan.html">Site Plan</a>
+    </div>
+    <p>© 2025 Gabriel Lehmann.</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
